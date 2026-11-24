@@ -1,0 +1,9 @@
+*.bak
+*.mdf
+*.ldf
+*.pbix
+*.bim
+*.xlsx
+*.csv
+*.zip
+.env
