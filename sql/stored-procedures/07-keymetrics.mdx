@@ -1,0 +1,5 @@
+-- Fictional model and measure names. Illustrative SSRS dataset query.
+SELECT {[Measures].[Total Exposure], [Measures].[Direct Exposure Ratio]} ON COLUMNS,
+ NON EMPTY [Division].[Division].[Division].MEMBERS ON ROWS
+FROM [Demo Credit Model]
+WHERE ([Date].[Date].&[2026-11-01]);

@@ -1,0 +1,5 @@
+-- Fictional model. Illustrates reporting by facility type and date.
+SELECT {[Measures].[Amount Due], [Measures].[Unsettled Amount]} ON COLUMNS,
+ NON EMPTY [Facility].[Type].[Type].MEMBERS ON ROWS
+FROM [Demo Credit Model]
+WHERE ([Date].[Date].&[2026-11-01]);
